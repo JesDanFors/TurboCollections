@@ -18,7 +18,7 @@ namespace TurboCollections{
             newArray[Count] = item;
             items = newArray;
         }
-        
+
         // gets the item at the specified index. If the index is outside the correct range, an exception is thrown.
         public T Get(int index){
             if (index < items.Length){
@@ -37,14 +37,15 @@ namespace TurboCollections{
         // removes one item from the list. If the 4th item is removed, then the 5th item becomes the 4th, the 6th becomes the 5th and so on.
         public void RemoveAt(int index){
             T[] newArray = new T[Count - 1];
-            for (int i = 0; i < Count; i++){
-                if (i == index){
-                    break;
+            for (int i = 0; i < Count-1; i++){
+                if (i >= index){
+                    newArray[i] = items[i+1];
                 }
-                newArray[i] = items[i];
+                else{
+                    newArray[i] = items[i];
+                }
             }
             items = newArray;
-
         }
 
         // returns true, if the given item can be found in the list, else false.

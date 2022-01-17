@@ -46,13 +46,18 @@ namespace TurboCollections.Test{
         [Test]
         public void RemoveSpecificElement(){
             var list = new TurboList<int>();
-            for (int i = 0; i < 10; i++){
-                list.Add(11);
-            }
-
-            var tester = list.Count;
-            list.RemoveAt(8);
-            Assert.AreNotEqual(list.Count, tester);
+            list.Add(1);
+            list.Add(2);
+            list.Add(3); 
+            list.Add(4);
+            list.Add(5);
+            list.Add(6);
+            list.Add(7);
+            list.Add(7);
+            list.Add(7);
+            list.Add(7);
+            list.RemoveAt(2);
+            Assert.AreEqual(6, list.Get(4));
         }
 
         [Test]
