@@ -18,5 +18,19 @@ namespace TurboCollections{
         public T Peek(){
             return stack[^1];
         }
+
+        public T Yeet(){
+            T[] newArray = new T[Count - 1];
+            var yeetie = Peek();
+            for (int i = 0; i < newArray.Length; i++){
+                newArray[i] = stack[i];
+            }
+            stack = newArray;
+            return yeetie;
+        }
+
+        public void Clear(){
+            stack = Array.Empty<T>();
+        }
     }
 }

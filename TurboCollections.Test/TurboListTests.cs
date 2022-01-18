@@ -1,10 +1,13 @@
 using System;
-using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace TurboCollections.Test{
     public class TurboListTests{
 
+        //Given
+        //When
+        //Then
+        
         [Test]
         public void NewListIsEmpty(){
             var list = new TurboList<int>();
@@ -18,13 +21,31 @@ namespace TurboCollections.Test{
             Assert.AreEqual(1, list.Count);
         }
 
-        [Test, TestCase(5), TestCase(7)]
+        [TestCase(5), TestCase(7)]
         public void AddingMultipleElementsIncreasesTheCount(int numberOfElements){
             var list = new TurboList<int>();
             for (int i = 0; i < numberOfElements; i++)
                 list.Add(5);
             Assert.AreEqual(numberOfElements, list.Count);
 
+        }
+
+        [Test]
+        public void ExistingItemsCanBeOverwritten(){
+            var (_, list) = CreateTestData();
+            list.Set(2, 666);
+            Assert.AreEqual(666, list.Get(2));
+
+        }
+
+        (int[] numbers, TurboList<int>) CreateTestData(){
+            int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            var list = new TurboList<int>();
+            foreach (var number in numbers){
+                list.Add(number);
+            }
+
+            return (numbers, list);
         }
 
         [Test]

@@ -1,22 +1,27 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 
 namespace TurboCollections{
-    public class TurboList<T>{
-        
-        int size;
+    public class TurboList<T> : IEnumerable<T>{
         T[] items = Array.Empty<T>();
-
-        public int Count => items.Length;
-        
-        // adds one item to the end of the list.
+        public int Count{ get; private set; }
         public void Add(T item){
-            T[] newArray = new T[Count + 1];
+            EnsureSize(Count + 1);
+            items[Count++] = item;
+        }
+
+        void EnsureSize(int size){
+            if (items.Length >= size){
+                return;
+            }
+            int newSize = Math.Max(size, items.Length * 2);
+
+            T[] newArray = new T[newSize];
             for (int i = 0; i < Count; i++){
                 newArray[i] = items[i];
             }
-            newArray[Count] = item;
             items = newArray;
         }
 
@@ -30,23 +35,24 @@ namespace TurboCollections{
             }
         }
 
+        public void Set(int index, T item){
+            items[index] = item;
+        }
+
         // removes all items from the list.
         public void Clear(){
-            items = Array.Empty<T>();
+            for (int i = 0; i < Count; i++){
+                items[i] = default;
+            }
+            Count = 0;
         }
 
         // removes one item from the list. If the 4th item is removed, then the 5th item becomes the 4th, the 6th becomes the 5th and so on.
         public void RemoveAt(int index){
-            T[] newArray = new T[Count - 1];
-            for (int i = 0; i < Count-1; i++){
-                if (i >= index){
-                    newArray[i] = items[i+1];
-                }
-                else{
-                    newArray[i] = items[i];
-                }
+            for (int i = index; i < Count - 1; i++){
+                items[i] = items[i + 1];
             }
-            items = newArray;
+            Count--;
         }
         
         // returns true, if the given item can be found in the list, else false.
@@ -80,10 +86,12 @@ namespace TurboCollections{
 
         public void AddRange(IEnumerable<T> items){
             foreach (var VARIABLE in items){
-                var temp = items.GetEnumerator();
-                Add(temp.Current);
+                Add(VARIABLE);
             }
         }
+        
+        
+        
     }
 }
 

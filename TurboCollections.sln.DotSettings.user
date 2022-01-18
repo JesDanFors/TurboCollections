@@ -8,5 +8,7 @@
     &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboStackTests.PushTheStack&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboStackTests.PeekTheStack&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboStackTests.PopTheStack&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboStackTests.ClearTheStack&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
