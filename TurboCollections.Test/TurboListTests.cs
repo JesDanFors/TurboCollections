@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace TurboCollections.Test{
@@ -88,6 +90,37 @@ namespace TurboCollections.Test{
             int index = list.IndexOf(50);
             Assert.AreEqual(-1, index);
         }
-        
+
+        [Test]
+        public void RemovedItem(){
+            var list = new TurboList<int>();
+            list.Add(12);
+            list.Add(11);
+            list.Add(10);
+            list.Remove(11);
+            Assert.AreEqual(10, list.Get(1));
+        }
+
+        [Test]
+        public void AddedARangeOfItems(){
+            var fillList = new TurboList<int>();
+            var list = new TurboList<int>();
+            fillList.Add(1);
+            fillList.Add(2);
+            fillList.Add(3);
+
+            //IEnumerable<int> test = fillList;
+            
+            
+            //list.AddRange(test);
+
+            for (int i = 0; i < fillList.Count; i++){
+                Console.WriteLine(fillList.Get(i));
+            }
+            for (int i = 0; i < list.Count; i++){
+                Console.WriteLine(list.Get(i));
+            }
+            Assert.AreSame(fillList,list);
+        }
     }
 }

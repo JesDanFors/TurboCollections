@@ -1,5 +1,4 @@
-﻿using System;
-using TurboCollections;
+﻿using TurboCollections;
 
 namespace CustomerManagement{
     class program{

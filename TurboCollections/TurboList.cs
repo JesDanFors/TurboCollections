@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 
 namespace TurboCollections{
@@ -19,7 +20,7 @@ namespace TurboCollections{
             items = newArray;
         }
 
-        // gets the item at the specified index. If the index is outside the correct range, an exception is thrown.
+        // gets the item at the specified index. If the index is outside the correct items, an exception is thrown.
         public T Get(int index){
             if (index < items.Length){
                 return items[index];
@@ -47,7 +48,7 @@ namespace TurboCollections{
             }
             items = newArray;
         }
-
+        
         // returns true, if the given item can be found in the list, else false.
         public bool Contains(T item){
             foreach (var VARIABLE in items){
@@ -66,6 +67,22 @@ namespace TurboCollections{
                 }
             }
             return -1;
+        }
+        
+        // removes the specified item from the list, if it can be found.
+        public void Remove(T item){
+            for (int i = 0; i < Count; i++){
+                if (item.Equals(items[i])){
+                    RemoveAt(i);
+                }
+            }
+        }
+
+        public void AddRange(IEnumerable<T> items){
+            foreach (var VARIABLE in items){
+                var temp = items.GetEnumerator();
+                Add(temp.Current);
+            }
         }
     }
 }

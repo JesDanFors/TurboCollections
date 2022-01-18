@@ -2,23 +2,11 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.1\ref\net6.0\System.Collections.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=018bfe1e_002D4ea7_002D4793_002Dbecd_002Dd3318bcbc7a2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ClearTheEntireList" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.ClearTheEntireList&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.RemoveSpecificElement&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.ListContainsItem&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.IndexOfItem&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.ItemNotContainedInList&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe9dde20_002Dc391_002D4c85_002D9864_002D9b049ff49671/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="NewListIsEmpty" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.NewListIsEmpty&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.AddingAnElementIncreasesCountToOne&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.GetTheFirstAndSecondElement&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.AnAddedElementCanBeGet&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.AddingMultipleElementsIncreasesTheCount&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.ClearTheEntireList&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests.RemoveSpecificElement&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboListTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboStackTests.PushTheStack&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboCollections.Test.TurboStackTests.PeekTheStack&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
