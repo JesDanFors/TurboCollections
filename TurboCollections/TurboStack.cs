@@ -4,7 +4,7 @@ namespace TurboCollections{
     public class TurboStack<T>{
         T[] stack = Array.Empty<T>();
         
-        public int Count => stack.Length;
+        public int Count{ get; private set; }
 
         public void Push(T item){
             T[] newArray = new T[Count + 1];
@@ -13,6 +13,8 @@ namespace TurboCollections{
             }
             newArray[Count] = item;
             stack = newArray;
+            Count++;
+            
         }
 
         public T Peek(){
