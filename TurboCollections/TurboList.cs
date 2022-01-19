@@ -85,13 +85,54 @@ namespace TurboCollections{
         }
 
         public void AddRange(IEnumerable<T> items){
-            foreach (var VARIABLE in items){
-                Add(VARIABLE);
+            foreach (var item in items){
+                Add(item);
             }
         }
+        public Enumerator GetEnumerator()
+        {
+            return new Enumerator(items, Count);
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
         
-        
-        
+        public struct Enumerator : IEnumerator<T>
+        {
+            private readonly T[] _items;
+            private readonly int _count;
+            private int _index;
+
+            public Enumerator(T[] items, int count){
+                _items = items;
+                _count = count;
+                _index = -1;
+            }
+            
+            public bool MoveNext(){
+                if (_index >= _count)
+                    return false; // exception
+                return ++_index < _count;
+            }
+
+            public void Reset(){
+                _index = -1;
+            }
+            public T Current => _items[_index];
+
+            object IEnumerator.Current => Current;
+
+            public void Dispose(){
+                Reset();
+            }
+        }
     }
 }
 
