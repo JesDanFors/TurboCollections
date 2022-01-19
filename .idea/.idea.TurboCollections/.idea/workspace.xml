@@ -120,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642424486651</updated>
       <workItem from="1642424489017" duration="41031000" />
-      <workItem from="1642580489354" duration="4684000" />
+      <workItem from="1642580489354" duration="7640000" />
     </task>
     <servers />
   </component>
@@ -143,6 +143,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TurboCollections.Test/TurboQueueTests.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Forsbergsskola\Console\TurboCollections\TurboCollections.Test\TurboQueueTests.cs" initialLine="19" containingFunctionPresentation="method 'CorrectItemAddedToQueue'">
+            <startOffsets>
+              <option value="520" />
+            </startOffsets>
+            <endOffsets>
+              <option value="521" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
