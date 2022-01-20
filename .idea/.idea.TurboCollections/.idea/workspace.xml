@@ -27,6 +27,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/25288f22b7c548d8adf4cb3c0171568e75600/89/01c062f0/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2e5a78beee0f4abd8ed7ef3636048cf1a20268/482/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TurboStack/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -120,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642424486651</updated>
       <workItem from="1642424489017" duration="41031000" />
-      <workItem from="1642580489354" duration="11068000" />
+      <workItem from="1642580489354" duration="22031000" />
     </task>
     <servers />
   </component>
@@ -143,6 +144,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TurboCollections.Test/TurboQueueTests.cs</url>
+          <line>95</line>
+          <properties documentPath="C:\Forsbergsskola\Console\TurboCollections\TurboCollections.Test\TurboQueueTests.cs" initialLine="95" containingFunctionPresentation="method 'MarcsSecondtest'">
+            <startOffsets>
+              <option value="2948" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2982" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

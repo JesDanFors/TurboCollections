@@ -15,5 +15,9 @@
     &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboQueueTests.TurboQueueTests.CorrectItemAddedToQueue&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboQueueTests.TurboQueueTests.CanDequeueAnItem&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboQueueTests.TurboQueueTests.DequeueReturnsCollectValue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboQueueTests.TurboQueueTests.QueueCanBeCleared&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboQueueTests.TurboQueueTests.MarcsTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboQueueTests.TurboQueueTests.QueueIsEmpty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::93BD5322-B0EA-4182-B740-8A11DEB3E917::net6.0::TurboQueueTests.TurboQueueTests.MarcsSecondtest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

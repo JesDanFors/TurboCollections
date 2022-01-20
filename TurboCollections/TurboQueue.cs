@@ -5,28 +5,48 @@ public class TurboQueue<T>{
     
     public int Count{ get; private set; }
 
-    public void Enqueue(T item){
-        T[] newArray = new T[Count + 1];
-        newArray[0] = item;
-        for (int i = 1; i < Count+1; i++){
-            newArray[i] = Queue[i - 1];
+    int startOfQueue;
+
+    void EnsureSize(int size){
+        if (Queue.Length >= size){
+            return;
         }
-        Queue = newArray;
-        Count++;
-    }
-
-    public T Peak(){
-        return Queue[^1];
-    }
-
-    public T Dequeue(){
-        T[] newArray = new T[Count - 1];
-        var top = Queue[^1];
-        for (int i = 0; i < Count-1; i++){
+        int newSize = Math.Max(size, Queue.Length * 2);
+        T[] newArray = new T[newSize];
+        for (int i = 0; i < Count; i++){
             newArray[i] = Queue[i];
         }
         Queue = newArray;
+    }
+    public void Enqueue(T item){
+        EnsureSize(Count+1);
+        if ((Count+startOfQueue) >= Queue.Length){
+            Queue[(Count + startOfQueue) % Queue.Length] = item;
+        }
+        else{
+            Queue[((Count + startOfQueue) % Queue.Length)] = item;
+        }
+        
+        foreach (var VARIABLE in Queue){
+            Console.WriteLine(VARIABLE);
+        }
+        ++Count;
+    }
+
+    public T Peak(){
+        return Queue[startOfQueue];
+    }
+
+    public T Dequeue(){
+        var item = Peak();
+        startOfQueue++;
+        startOfQueue %= Queue.Length;
         Count--;
-        return top;
+        return item;
+    }
+
+    public void Clear(){
+        Queue = new T[4];
+        Count = 0;
     }
 }
