@@ -8,9 +8,8 @@ public class TurboQueue<T>{
     public void Enqueue(T item){
         T[] newArray = new T[Count + 1];
         newArray[0] = item;
-        for (int i = Count-1; i >= 1; i--){
-            newArray[i] = Queue[i];
-            Console.WriteLine(newArray[i]);
+        for (int i = 1; i < Count+1; i++){
+            newArray[i] = Queue[i - 1];
         }
         Queue = newArray;
         Count++;
@@ -18,5 +17,16 @@ public class TurboQueue<T>{
 
     public T Peak(){
         return Queue[^1];
+    }
+
+    public T Dequeue(){
+        T[] newArray = new T[Count - 1];
+        var top = Queue[^1];
+        for (int i = 0; i < Count-1; i++){
+            newArray[i] = Queue[i];
+        }
+        Queue = newArray;
+        Count--;
+        return top;
     }
 }
