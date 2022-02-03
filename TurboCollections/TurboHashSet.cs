@@ -12,11 +12,11 @@ public class TurboHashSet<T>{
     }
 
     public bool Exists(T item){
-        
+        return true;
     }
 
     public bool Remove(T item){
-        
+        return true;
     }
 
     void Resize(){
